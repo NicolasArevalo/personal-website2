@@ -43,10 +43,6 @@ const formatDate = (date) => {
         <div class="bento-hover-layer"></div>
       </a>
     </div>
-
-    <div class="scroll-wrapper">
-      <p class="scroll-indicator">↓ Desliza para ver más ↓</p>
-    </div>
   </div>
 
   <div class="container feed-container" id="todas-las-entradas">
@@ -54,7 +50,7 @@ const formatDate = (date) => {
     <hr class="divider" />
 
     <div class="notes-list" id="notes-container">
-      {sortedPosts.map((post, index) => (
+      {sortedPosts.slice(6).map((post, index) => (
         <article class={`note-card ${index >= 5 ? 'hidden-post' : ''}`}>
           <a href={`/blog/${post.slug}`} class="note-link-wrapper">
             <div class="note-date">
@@ -70,7 +66,7 @@ const formatDate = (date) => {
       ))}
     </div>
 
-    {sortedPosts.length > 5 && (
+    {sortedPosts.length > 11 && (
       <div class="load-more-container">
         <button id="load-more-btn" class="load-more-button">
           Ver más entradas
@@ -130,32 +126,6 @@ const formatDate = (date) => {
   @media (max-width: 600px) {
     .bento-card.wide {
       flex: 1 1 100%; /* Reset on mobile */
-    }
-  }
-
-  .scroll-wrapper {
-    text-align: center;
-    margin-top: 3.5rem;
-  }
-  
-  .scroll-indicator {
-    display: inline-block;
-    font-size: 0.8rem;
-    color: var(--text-tertiary);
-    font-family: var(--font-body);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    animation: bounce 2.5s infinite ease-in-out;
-  }
-
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-      color: var(--text-tertiary);
-    }
-    50% {
-      transform: translateY(8px);
-      color: var(--text-secondary);
     }
   }
 

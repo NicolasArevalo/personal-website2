@@ -14,6 +14,13 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await post.render();
 
+// Fetch all posts to get related random ones
+const allPosts = await getCollection('blog');
+const otherPosts = allPosts.filter(p => p.slug !== post.slug);
+// Shuffle array of other posts to get 2 random ones
+const shuffled = [...otherPosts].sort(() => 0.5 - Math.random());
+const relatedPosts = shuffled.slice(0, 2);
+
 const formatDate = (date) => {
   return date.toLocaleDateString('es-ES', {
     day: 'numeric',
@@ -43,6 +50,23 @@ const formatDate = (date) => {
     <div class="prose">
       <Content />
     </div>
+
+    {relatedPosts.length > 0 && (
+      <div class="related-posts">
+        <h3 class="section-label">TAMBIÉN TE PODRÍA GUSTAR</h3>
+        <div class="bento-grid">
+          {relatedPosts.map((relatedPost) => (
+            <a href={`/blog/${relatedPost.slug}`} class="bento-card">
+              <div class="bento-content">
+                <time>{formatDate(relatedPost.data.date)}</time>
+                <h4>{relatedPost.data.title}</h4>
+              </div>
+              <div class="bento-hover-layer"></div>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
   </div>
 </BaseLayout>
 
@@ -176,5 +200,96 @@ const formatDate = (date) => {
     background-color: transparent;
     padding: 0;
     color: inherit;
+  }
+
+  /* Related Posts Bento Grid Styles */
+  .related-posts {
+    margin-top: 6rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .section-label {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  .bento-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 500px) {
+    .bento-grid {
+      flex-direction: column;
+    }
+  }
+
+  .bento-card {
+    flex: 1 1 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    min-height: 180px;
+    background-color: #050505;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .bento-card time {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    font-family: var(--font-body);
+    margin-bottom: 0.75rem;
+    display: block;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+  }
+
+  .bento-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.2;
+    z-index: 2;
+    position: relative;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+  }
+
+  .bento-hover-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(147, 51, 234, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .bento-card:hover {
+    border-color: rgba(147, 51, 234, 0.3);
+  }
+
+  .bento-card:hover .bento-hover-layer {
+    opacity: 1;
+  }
+
+  .bento-card:hover h4 {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(147, 51, 234, 0.4);
   }
 </style>

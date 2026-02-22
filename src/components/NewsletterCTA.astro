@@ -8,12 +8,50 @@
       <p>Suscríbete para recibir nuevas notas y contenido exclusivo directamente en tu bandeja de entrada. Sin spam, prometido.</p>
     </div>
     
-    <form class="cta-form" action="/api/subscribe" method="POST">
+    <form class="cta-form" id="newsletter-form" action="/api/subscribe" method="POST">
       <input type="email" name="email" placeholder="tu@correo.com" required aria-label="Correo electrónico" />
       <button type="submit">Suscribirme</button>
     </form>
+    
+    <!-- Under Construction Alert -->
+    <div id="newsletter-alert" class="newsletter-alert" style="display: none;">
+      <span class="alert-icon">✨</span>
+      <p>¡Pronto estará disponible! Estoy configurando el boletín.</p>
+    </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('newsletter-form');
+    const alert = document.getElementById('newsletter-alert');
+
+    if (form && alert) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault(); // Prevent actual submission
+        
+        // Ensure element is displayed before animating
+        alert.style.display = 'flex';
+        
+        // Force a browser reflow so the transition works from display: none
+        alert.offsetHeight; 
+        
+        // Show the alert
+        alert.classList.add('show-alert');
+        
+        // Hide it after 4 seconds
+        setTimeout(() => {
+          alert.classList.remove('show-alert');
+          
+          // Wait for transition to finish before hiding from DOM
+          setTimeout(() => {
+            alert.style.display = 'none';
+          }, 400); 
+        }, 4000);
+      });
+    }
+  });
+</script>
 
 <style>
   .newsletter-cta {
@@ -94,5 +132,46 @@
     .cta-form {
       flex-direction: column;
     }
+    
+    .newsletter-alert {
+      width: 90%;
+      bottom: 1rem;
+    }
+  }
+
+  /* Alert Toast Styles */
+  .newsletter-alert {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background-color: #000;
+    border: 1px solid rgba(147, 51, 234, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(147, 51, 234, 0.2);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    align-items: center;
+    gap: 0.75rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 9999;
+  }
+
+  .newsletter-alert.show-alert {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .alert-icon {
+    font-size: 1.25rem;
+  }
+
+  .newsletter-alert p {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 500;
   }
 </style>

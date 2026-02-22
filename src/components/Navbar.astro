@@ -8,11 +8,19 @@ import NAicon from './../assets/naiconWhite.svg'
 		<a href='/' class='logo'>
 			<Image src={NAicon} alt='Logo Principal' class='logoPrincipal' />
 		</a>
+
+		<input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+		<label for="menu-toggle" class="hamburger-menu">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</label>
+
 		<ul class='nav-links'>
 			<li><a href='/'>Notas</a></li>
 			<li><a href='/sobre-mi'>Sobre mí</a></li>
 			<li><a href='/profesional'>Profesional</a></li>
-			<li><a href='https://open.spotify.com/show/1gFBa3gI7d9FTKTB6KRY6e?si=mHYJHseYSWmZofb08cdynA'>Podcast</a></li>
+			<li><a href='https://open.spotify.com/show/1gFBa3gI7d9FTKTB6KRY6e?si=mHYJHseYSWmZofb08cdynA' target="_blank" rel="noopener noreferrer">Podcast</a></li>
 		</ul>
 	</div>
 </nav>
@@ -62,10 +70,76 @@ import NAicon from './../assets/naiconWhite.svg'
 		text-shadow: none; /* No purple shadow on navbar, keep it clean */
 	}
 
+	/* Hamburger Menu Hidden by default on desktop */
+	.menu-toggle-checkbox {
+		display: none !important;
+	}
+
+	.hamburger-menu {
+		display: none;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 24px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 1001; /* Above the mobile menu */
+	}
+
+	.hamburger-menu .bar {
+		display: block;
+		height: 2px;
+		width: 100%;
+		background-color: var(--text-primary);
+		border-radius: 2px;
+		transition: all 0.3s ease-in-out;
+	}
+
 	/* Responsive touches */
-	@media (max-width: 600px) {
+	@media (max-width: 768px) {
+		.hamburger-menu {
+			display: flex !important;
+		}
+
 		.nav-links {
-			gap: 1rem;
+			display: flex;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			flex-direction: column;
+			background-color: rgba(0, 0, 0, 0.95);
+			backdrop-filter: blur(15px);
+			-webkit-backdrop-filter: blur(15px);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+			padding: 2rem 1.5rem;
+			gap: 2rem;
+			align-items: center;
+			opacity: 0;
+			transform: translateY(-10px);
+			pointer-events: none;
+			transition: all 0.3s ease;
+		}
+
+		.nav-links a {
+			font-size: 1.2rem;
+		}
+
+		/* Checkbox Hack specific styles to trigger menu open */
+		.menu-toggle-checkbox:checked ~ .nav-links {
+			opacity: 1;
+			transform: translateY(0);
+			pointer-events: auto;
+		}
+
+		/* Hamburger X animation when checked */
+		.menu-toggle-checkbox:checked ~ .hamburger-menu .bar:nth-child(1) {
+			transform: translateY(8px) rotate(45deg);
+		}
+		.menu-toggle-checkbox:checked ~ .hamburger-menu .bar:nth-child(2) {
+			opacity: 0;
+		}
+		.menu-toggle-checkbox:checked ~ .hamburger-menu .bar:nth-child(3) {
+			transform: translateY(-8px) rotate(-45deg);
 		}
 	}
 </style>

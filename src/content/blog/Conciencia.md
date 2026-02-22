@@ -5,10 +5,7 @@ description: "<aside> \U0001F5E3️ “Señores, estamos ante el avance tecnoló
 ---
 # Conciencia
 
-<aside>
-🗣️ “*Señores, estamos ante el avance tecnológico más grande de la historia. Darwin, Einstein, Musk, todos fueron un pilar fundamental del desarrollo, pero hay algo que nadie nunca pudo vencer…, hasta ahora. Hoy somos capaces de extraer la conciencia humana e implantarla de vuelta. Pronto seremos capaces de incorporar la conciencia y la memoria humana conjunta, este es el primer paso para vencer a LA MUERTE.”*
-
-</aside>
+> 🗣️ “*Señores, estamos ante el avance tecnológico más grande de la historia. Darwin, Einstein, Musk, todos fueron un pilar fundamental del desarrollo, pero hay algo que nadie nunca pudo vencer…, hasta ahora. Hoy somos capaces de extraer la conciencia humana e implantarla de vuelta. Pronto seremos capaces de incorporar la conciencia y la memoria humana conjunta, este es el primer paso para vencer a LA MUERTE.”*
 
 Concluye Artis Montgomery, un hombre de unos 70 años, alto y delgado, dueño de Monterprise América, empresa, no, mejor dicho, imperio pionero en genética y tecnología humana.
 
@@ -32,17 +29,11 @@ Un equipo cuidadosamente seleccionado que estaba a la orden. Todos recibieron un
 
 Todos los profesionales fueron llevados a una sala apartada. Artis los había convocado a una reunión antes de su partida, lo cual fue una sorpresa para todos, él nunca habla con nadie, siempre usa sus robots para delegar sus tareas, su torre de 2000 pisos, (1500 hacia arriba y 500 bajo tierra) estaba casi toda ocupada por robots que fabricaban más robots para delegar más tareas.
 
-<aside>
-🗣️ *Sé que les parece extraño que esté aquí. Pero era una tarea que nadie podría hacer por mí. Muy bien, al grano -* hace una pausa para organizar mejor sus ideas. *-El ejercito eurásico viene hacia acá, atacarán con todo. Y como saben, no me puedo quedar de manos cruzadas. Desde hace tiempo mi hermano lleva planeando esta operación. Quiere matarme, y, aunque él tiene mayor número de soldados, yo tengo más tecnología y más agua. No sé qué esperar. Él lleva años dedicándose, como yo, al desarrollo de tecnología militar, pero yo… ¡Yo no me dejaré ganar! Nadie se llevará mi agua…*
-
-</aside>
+> 🗣️ *Sé que les parece extraño que esté aquí. Pero era una tarea que nadie podría hacer por mí. Muy bien, al grano -* hace una pausa para organizar mejor sus ideas. *-El ejercito eurásico viene hacia acá, atacarán con todo. Y como saben, no me puedo quedar de manos cruzadas. Desde hace tiempo mi hermano lleva planeando esta operación. Quiere matarme, y, aunque él tiene mayor número de soldados, yo tengo más tecnología y más agua. No sé qué esperar. Él lleva años dedicándose, como yo, al desarrollo de tecnología militar, pero yo… ¡Yo no me dejaré ganar! Nadie se llevará mi agua…*
 
 Todos los profesionales se miraron entre sí. El mundo estaba dividido entre América y Eurasia (África era su zona industrial, y Oceanía había quedado cubierta por el deshielo hacía 50 años). Una rivalidad de dos hermanos que llegaron al poder gracias a la empresa de su abuelo. Su hermano, Calvin Montgomery era cinco años menor, y cuando Artis tomó el poder de América, decidió dividir la empresa en Monterprise América y Eurásia. Siempre tuvieron roces de ego. Y desde que llegaron al poder, la falta de recursos hizo que esos problemas personales se volvieran problemas del mundo entero. Todos sabían lo que se avecinaba.
 
-<aside>
-🗣️ *Es por eso que quiero entregarles esto. - Saca del bolsillo un gorro de un material parecido al plástico – Mi gran invento, el extractor de conciencia. No importa que en mundo al que van sea de humanos salvajes. Darles conciencia permitirá que nuestra vida y todo por lo que luchamos, no se extinga.*
-
-</aside>
+> 🗣️ *Es por eso que quiero entregarles esto. - Saca del bolsillo un gorro de un material parecido al plástico – Mi gran invento, el extractor de conciencia. No importa que en mundo al que van sea de humanos salvajes. Darles conciencia permitirá que nuestra vida y todo por lo que luchamos, no se extinga.*
 
 Artis se quedó hablando un poco más con Lara, mientras el resto de la tripulación preparaba su partida. Pocos minutos después salieron del campo gravitacional de la tierra, lo que les permitió activar el sistema de propulsión de antimateria. Eso los sacó de la galaxia en pocos días.
 
@@ -50,10 +41,7 @@ Al arribar a TierraB, hicieron un chequeo y se asentaron. Parecía que hubieran 
 
 Disfrutaron del paisaje y los seres que lograron ver. Más tarde, Lara expresó algo que la tuvo muy inquieta durante el viaje, algo que le dijo Artis:
 
-<aside>
-🗣️ *Cuando la conciencia sea extraída por el gorro, la persona morirá. –*
-
-</aside>
+> 🗣️ *Cuando la conciencia sea extraída por el gorro, la persona morirá. –*
 
 Hubo entonces un cambio de planes, entendieron que su misión ahora era entregar su vida. La tripulación quedó pasmada, todos cruzaron miradas.
 
