@@ -9,7 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/vercel": "^9.0.4",
     "astro": "^5.17.1",
-    "gray-matter": "^4.0.3"
+    "gray-matter": "^4.0.3",
+    "resend": "^6.9.2"
   }
 }

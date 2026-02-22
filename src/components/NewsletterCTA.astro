@@ -23,31 +23,53 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('newsletter-form');
+    const form = document.getElementById('newsletter-form') as HTMLFormElement;
     const alert = document.getElementById('newsletter-alert');
+    const alertText = alert?.querySelector('p');
 
-    if (form && alert) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault(); // Prevent actual submission
+    if (form && alert && alertText) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault(); 
         
-        // Ensure element is displayed before animating
-        alert.style.display = 'flex';
+        const formData = new FormData(form);
+        const submitBtn = form.querySelector('button');
+        if (!submitBtn) return;
         
-        // Force a browser reflow so the transition works from display: none
-        alert.offsetHeight; 
-        
-        // Show the alert
-        alert.classList.add('show-alert');
-        
-        // Hide it after 4 seconds
-        setTimeout(() => {
-          alert.classList.remove('show-alert');
+        const originalBtnText = submitBtn.textContent || '';
+        submitBtn.textContent = 'Enviando...';
+        submitBtn.disabled = true;
+
+        try {
+          const response = await fetch('/api/subscribe', {
+            method: 'POST',
+            body: formData,
+          });
+
+          const data = await response.json();
+
+          if (response.ok) {
+            alertText.textContent = data.message || '¡Gracias por suscribirte!';
+            form.reset();
+          } else {
+            alertText.textContent = data.message || 'Hubo un error al suscribirte.';
+          }
+        } catch (error) {
+          alertText.textContent = 'Error de conexión. Intenta nuevamente.';
+        } finally {
+          submitBtn.textContent = originalBtnText;
+          submitBtn.disabled = false;
           
-          // Wait for transition to finish before hiding from DOM
+          alert.style.display = 'flex';
+          alert.offsetHeight; 
+          alert.classList.add('show-alert');
+          
           setTimeout(() => {
-            alert.style.display = 'none';
-          }, 400); 
-        }, 4000);
+            alert.classList.remove('show-alert');
+            setTimeout(() => {
+              alert.style.display = 'none';
+            }, 400); 
+          }, 4000);
+        }
       });
     }
   });
