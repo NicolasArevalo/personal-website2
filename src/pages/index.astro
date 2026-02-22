@@ -19,7 +19,7 @@ const formatDate = (date) => {
 <BaseLayout title="Inicio">
   <div class="container hero">
     <h1>Notas y pensamientos</h1>
-    <p class="subtitle">Escribo sobre desarrollo, diseño y tecnología en general.</p>
+    <p class="subtitle">Un espacio para compartir esas ideas sueltas que retumban en mi cabeza y la única forma de detenerlas es dejarlas salir.</p>
   </div>
 
   <div class="container overview-container">
@@ -53,9 +53,9 @@ const formatDate = (date) => {
     <h3 class="section-label">TODAS LAS ENTRADAS</h3>
     <hr class="divider" />
 
-    <div class="notes-list">
-      {sortedPosts.map(post => (
-        <article class="note-card">
+    <div class="notes-list" id="notes-container">
+      {sortedPosts.map((post, index) => (
+        <article class={`note-card ${index >= 5 ? 'hidden-post' : ''}`}>
           <a href={`/blog/${post.slug}`} class="note-link-wrapper">
             <div class="note-date">
               <time datetime={post.data.date.toISOString()}>
@@ -69,6 +69,14 @@ const formatDate = (date) => {
         </article>
       ))}
     </div>
+
+    {sortedPosts.length > 5 && (
+      <div class="load-more-container">
+        <button id="load-more-btn" class="load-more-button">
+          Ver más entradas
+        </button>
+      </div>
+    )}
   </div>
 </BaseLayout>
 
@@ -326,4 +334,60 @@ const formatDate = (date) => {
     color: var(--accent-color);
     text-shadow: 0 0 10px rgba(147, 51, 234, 0.4);
   }
+
+  .hidden-post {
+    display: none;
+  }
+
+  .load-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .load-more-button {
+    background-color: var(--border-color); /* subtle background */
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px; /* round like a pill */
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: var(--font-body);
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, border-color 0.2s;
+  }
+
+  .load-more-button:hover {
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+    border-color: var(--text-primary);
+    box-shadow: 0 4px 15px rgba(147, 51, 234, 0.2);
+  }
+  
+  .load-more-button:active {
+    transform: scale(0.98);
+  }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', () => {
+        const hiddenPosts = Array.from(document.querySelectorAll('.hidden-post'));
+        if (hiddenPosts.length > 0) {
+          hiddenPosts.slice(0, 5).forEach(post => {
+            post.classList.remove('hidden-post');
+            // Adding a tiny animation feeling by letting standard CSS handle rendering
+          });
+          
+          if (hiddenPosts.length <= 5) {
+            loadMoreBtn.style.display = 'none';
+          }
+        }
+      });
+    }
+  });
+</script>
