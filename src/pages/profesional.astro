@@ -1,0 +1,231 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Profesional" description="Mi portafolio profesional y experiencia laboral.">
+  <div class="container page-content">
+    <header class="page-header">
+      <h1>Profesional</h1>
+      <p class="subtitle">Mi experiencia y los proyectos en los que he trabajado.</p>
+    </header>
+
+    <div class="prose">
+      <h2>Titulaciones y Educación</h2>
+      
+      <div class="badges-container">
+        <a href="https://niiico.com/_astro/inge.64d8bbb7.pdf" target="_blank" rel="noopener noreferrer" class="badge">
+          <span class="badge-title">Ingeniero de Software</span>
+          <span class="badge-meta">Universitario ↗</span>
+        </a>
+        <a href="https://niiico.com/_astro/sistemas.36abc9c0.pdf" target="_blank" rel="noopener noreferrer" class="badge">
+          <span class="badge-title">Técnico en Sistemas</span>
+          <span class="badge-meta">SENA ↗</span>
+        </a>
+        <a href="https://niiico.com/_astro/scrum.b75839b4.pdf" target="_blank" rel="noopener noreferrer" class="badge">
+          <span class="badge-title">SCRUM Fundamentals</span>
+          <span class="badge-meta">Certificado ↗</span>
+        </a>
+        <a href="https://niiico.com/_astro/udw.4ab5ce98.pdf" target="_blank" rel="noopener noreferrer" class="badge">
+          <span class="badge-title">Desarrollo Web</span>
+          <span class="badge-meta">Udemy ↗</span>
+        </a>
+        <a href="https://niiico.com/_astro/pjs.ddccc43e.pdf" target="_blank" rel="noopener noreferrer" class="badge">
+          <span class="badge-title">Profesional Javascript</span>
+          <span class="badge-meta">Platzi ↗</span>
+        </a>
+        <a href="https://niiico.com/_astro/id.2f6d16cd.pdf" target="_blank" rel="noopener noreferrer" class="badge">
+          <span class="badge-title">Inglés para Developers</span>
+          <span class="badge-meta">Platzi ↗</span>
+        </a>
+      </div>
+
+      <h2>Proyectos Destacados</h2>
+      <ul class="projects-list portfolio">
+        <li>
+          <strong>Notes App 🗒️</strong>
+          <span class="tech-stack">React • Python • TailwindCSS • PostgreSQL</span>
+          <p>Aplicación fullstack manejando RESTful API con Django y base de datos relacional.</p>
+          <div class="links">
+            <a href="https://notesapp-three-nu.vercel.app" target="_blank">Visitar app</a> • 
+            <a href="https://github.com/nicolasarevalo/notesapp-frontend" target="_blank">GitHub Front</a> • 
+            <a href="https://github.com/nicolasarevalo/notesapp-back" target="_blank">GitHub Back</a>
+          </div>
+        </li>
+        <li>
+          <strong>WebChat 💭</strong>
+          <span class="tech-stack">Socket.io • JavaScript</span>
+          <p>Aplicación de chat en tiempo real desplegada con éxito, mejorando los conceptos iniciales del curso.</p>
+          <div class="links">
+            <a href="https://spiny-few-tsunami.glitch.me" target="_blank">Visitar app</a> • 
+            <a href="https://github.com/nicolasarevalo/webchat" target="_blank">GitHub</a>
+          </div>
+        </li>
+        <li>
+          <strong>To-do App 📝</strong>
+          <span class="tech-stack">React • Supabase • Pico CSS</span>
+          <p>Implementación de Backend-as-a-Service (BaaS) usando Supabase para persistencia de datos.</p>
+          <div class="links">
+            <a href="https://todoapp-ashen.vercel.app" target="_blank">Visitar app</a> • 
+            <a href="https://github.com/nicolasarevalo/todoapp" target="_blank">GitHub</a>
+          </div>
+        </li>
+        <li>
+          <strong>Explouñas 💅🏼</strong>
+          <span class="tech-stack">HTML • CSS • JavaScript</span>
+          <p>Sitio web informativo hecho a medida para un emprendimiento. Diseño visualmente atractivo.</p>
+          <div class="links">
+            <a href="https://explounas2.vercel.app/" target="_blank">Visitar app</a> • 
+            <a href="https://github.com/nicolasarevalo/explounas" target="_blank">GitHub</a>
+          </div>
+        </li>
+        <li>
+          <strong>Perritos 🐶</strong>
+          <span class="tech-stack">React • CSS</span>
+          <p>Aplicación que interactúa con APIs (GET, POST, PUT, PATCH, DELETE) migrada a React.</p>
+          <div class="links">
+            <a href="https://perritosapp.vercel.app" target="_blank">Visitar app</a> • 
+            <a href="https://github.com/nicolasarevalo/perritosapp" target="_blank">GitHub</a>
+          </div>
+        </li>
+        <li>
+          <strong>Giphy App 😜</strong>
+          <span class="tech-stack">React • CSS</span>
+          <p>Buscador de GIFs con estilos diseñados en CSS puro.</p>
+          <div class="links">
+            <a href="https://nicolasarevalo.github.io/giphy-app/" target="_blank">Visitar app</a> • 
+            <a href="https://github.com/nicolasarevalo/giphy-app" target="_blank">GitHub</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    margin-bottom: 4rem;
+  }
+
+  .page-header h1 {
+    font-size: 3.5rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-family: var(--font-heading);
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+  }
+
+  .prose :global(h2) {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-family: var(--font-heading);
+  }
+
+  .badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.6rem 1.1rem;
+    background-color: #080808;
+    border: 1px solid var(--border-color);
+    border-radius: 50px; /* Pill shape */
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .badge:hover {
+    border-color: rgba(147, 51, 234, 0.4);
+    background-color: #0c0c0c;
+  }
+
+  .badge-title {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+  }
+
+  .badge-meta {
+    color: var(--text-tertiary);
+    font-size: 0.75rem;
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .badge:hover .badge-title {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(147, 51, 234, 0.4);
+  }
+
+  .projects-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .projects-list li {
+    margin-bottom: 2rem;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+
+  .projects-list strong {
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 0.25rem;
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 500;
+  }
+
+  .portfolio li {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+  }
+
+  .portfolio li:last-child {
+    border-bottom: none;
+  }
+
+  .tech-stack {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    margin-bottom: 0.75rem;
+    font-family: var(--font-body);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  
+  .links {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .links a, .external-link {
+    color: var(--text-tertiary);
+    text-decoration: none;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+  }
+
+  .links a:hover, .external-link:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(147, 51, 234, 0.4);
+  }
+</style>

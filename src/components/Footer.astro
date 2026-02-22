@@ -1,0 +1,66 @@
+---
+// Footer.astro
+---
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-info">
+      <p class="copyright">&copy; {new Date().getFullYear()} INAG4. Todos los derechos reservados.</p>
+    </div>
+    
+    <div class="footer-links">
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:hola@ejemplo.com">hola@ejemplo.com</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .copyright {
+    color: var(--text-tertiary);
+    font-size: 0.85rem;
+    margin: 0;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-links a {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+  }
+
+  .footer-links a:hover {
+    color: var(--text-primary);
+  }
+
+  @media (max-width: 600px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .footer-links {
+      justify-content: center;
+    }
+  }
+</style>

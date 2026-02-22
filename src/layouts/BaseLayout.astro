@@ -1,0 +1,37 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import NewsletterCTA from '../components/NewsletterCTA.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Blog personal sobre programación, diseño y notas" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | INAG4</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <Navbar />
+      
+      <main>
+        <slot />
+      </main>
+      
+      <NewsletterCTA />
+      <Footer />
+    </div>
+  </body>
+</html>

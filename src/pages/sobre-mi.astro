@@ -1,0 +1,210 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Fetch Instagram posts from Behold.so JSON endpoints
+const beholdUrlPersonal = 'https://feeds.behold.so/27sg3XMeF1aZ3vUXioer';
+const beholdUrlFotos = 'https://feeds.behold.so/Q8ibmdPrMowV7U6nqnOI';
+
+let instagramPosts = [];
+let photographyPosts = [];
+
+try {
+  // Fetch personal feed
+  const responsePersonal = await fetch(beholdUrlPersonal);
+  if (responsePersonal.ok) {
+    const dataPersonal = await responsePersonal.json();
+    instagramPosts = dataPersonal.posts?.slice(0, 3) || [];
+  }
+  
+  // Fetch photography feed
+  const responseFotos = await fetch(beholdUrlFotos);
+  if (responseFotos.ok) {
+    const dataFotos = await responseFotos.json();
+    photographyPosts = dataFotos.posts?.slice(0, 3) || [];
+  }
+} catch (e) {
+  console.error('Error fetching Instagram feeds:', e);
+}
+---
+
+<BaseLayout title="Sobre mí" description="Acerca de mí, mi historia y mis aficiones.">
+  <div class="container page-content">
+    <header class="page-header">
+      <h1>Sobre mí</h1>
+    </header>
+
+    <div class="prose">
+      <p>Hola, mi nombre es INAG4. Soy un desarrollador y entusiasta de la tecnología. Creé este espacio para compartir lo que voy aprendiendo y un poco de mi visión del mundo digital.</p>
+      
+      <h2>Mi historia</h2>
+      <p>Desde que toqué mi primera computadora supe que quería entender cómo funcionaba. A lo largo de los años, he experimentado con diversas tecnologías, desde el diseño gráfico hasta la programación web moderna.</p>
+
+      <h2>¿Qué me apasiona?</h2>
+      <ul>
+        <li>Construir interfaces de usuario hermosas y accesibles.</li>
+        <li>El diseño minimalista (como puedes ver en este blog).</li>
+        <li>Escribir sobre mis experimentos y aprendizajes.</li>
+      </ul>
+
+      {instagramPosts.length > 0 && (
+        <h2>Día a día</h2>
+        <p>Un vistazo rápido a mi vida personal y mis momentos espontáneos (@_niiico28):</p>
+        <div class="instagram-grid">
+          {instagramPosts.map((post) => (
+            <a href={post.permalink} target="_blank" rel="noopener noreferrer" class="instagram-post">
+              <div class="instagram-image-wrapper">
+                {post.mediaType === 'VIDEO' ? (
+                  <img src={post.thumbnailUrl || (post.sizes && post.sizes.large ? post.sizes.large.mediaUrl : post.mediaUrl)} alt={post.prunedCaption || "Instagram post"} loading="lazy" />
+                ) : (
+                  <img src={post.sizes && post.sizes.large ? post.sizes.large.mediaUrl : post.mediaUrl} alt={post.prunedCaption || "Instagram post"} loading="lazy" />
+                )}
+                <div class="instagram-overlay">
+                  <span class="instagram-icon">Ver en Instagram ↗</span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+
+      {photographyPosts.length > 0 && (
+        <h2>A través de mi lente</h2>
+        <p>Mi perspectiva del mundo capturada en píxeles. Paisajes, luces y sombras bajo mi visión (@fotosdeniiico):</p>
+        <div class="instagram-grid photography-grid">
+          {photographyPosts.map((post) => (
+            <a href={post.permalink} target="_blank" rel="noopener noreferrer" class="instagram-post">
+              <div class="instagram-image-wrapper">
+                {post.mediaType === 'VIDEO' ? (
+                  <img src={post.thumbnailUrl || (post.sizes && post.sizes.large ? post.sizes.large.mediaUrl : post.mediaUrl)} alt={post.prunedCaption || "Photography post"} loading="lazy" />
+                ) : (
+                  <img src={post.sizes && post.sizes.large ? post.sizes.large.mediaUrl : post.mediaUrl} alt={post.prunedCaption || "Photography post"} loading="lazy" />
+                )}
+                <div class="instagram-overlay">
+                  <span class="instagram-icon">Ver fotografía ↗</span>
+                  {post.prunedCaption && <span class="instagram-caption">{post.prunedCaption.substring(0, 40)}{post.prunedCaption.length > 40 ? '...' : ''}</span>}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    margin-bottom: 3rem;
+  }
+
+  .page-header h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    font-family: var(--font-heading);
+  }
+
+  .prose :global(h2) {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+    font-weight: 500;
+  }
+
+  .prose :global(p) {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+  }
+
+  .prose :global(ul) {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 1.15rem;
+  }
+
+  .prose :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .instagram-post {
+    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.3s ease;
+    background-color: #080808;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .instagram-post:hover {
+    border-color: rgba(147, 51, 234, 0.4);
+  }
+
+  .instagram-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .instagram-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .instagram-post:hover img {
+    transform: scale(1.05);
+  }
+
+  .instagram-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .instagram-post:hover .instagram-overlay {
+    opacity: 1;
+  }
+
+  .instagram-icon {
+    color: white;
+    font-size: 0.85rem;
+    font-family: var(--font-body);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 0.25rem;
+  }
+
+  .instagram-caption {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.75rem;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
