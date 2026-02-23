@@ -31,8 +31,9 @@ const POST = async ({ request }) => {
       html: "<h2>¡Hola!</h2><p>Gracias por unirte al newsletter de niiico.com. Pronto recibirás contenido exclusivo sobre programación y tecnología.</p><p>Saludos,<br>Nicolás</p>"
     });
     if (emailError) {
+      console.error("Error enviando email:", emailError);
       return new Response(
-        JSON.stringify({ message: emailError.message }),
+        JSON.stringify({ message: "Error al enviar el correo: " + emailError.message }),
         { status: 500 }
       );
     }
@@ -41,8 +42,9 @@ const POST = async ({ request }) => {
       { status: 200 }
     );
   } catch (error) {
+    console.error("Error crítico en el servidor:", error);
     return new Response(
-      JSON.stringify({ message: "Error interno del servidor" }),
+      JSON.stringify({ message: "Error interno del servidor. Revisa los logs de Vercel." }),
       { status: 500 }
     );
   }

@@ -43,8 +43,9 @@ export const POST: APIRoute = async ({ request }) => {
     });
 
     if (emailError) {
+      console.error("Error enviando email:", emailError);
       return new Response(
-        JSON.stringify({ message: emailError.message }),
+        JSON.stringify({ message: "Error al enviar el correo: " + emailError.message }),
         { status: 500 }
       );
     }
@@ -53,9 +54,10 @@ export const POST: APIRoute = async ({ request }) => {
       JSON.stringify({ message: '¡Suscripción exitosa!' }),
       { status: 200 }
     );
-  } catch (error) {
+  } catch (error: any) {
+    console.error("Error crítico en el servidor:", error);
     return new Response(
-      JSON.stringify({ message: 'Error interno del servidor' }),
+      JSON.stringify({ message: 'Error interno del servidor. Revisa los logs de Vercel.' }),
       { status: 500 }
     );
   }
