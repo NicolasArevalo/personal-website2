@@ -5,7 +5,6 @@ description: >-
   Hoy pasaba por una escuela, los niños estaban estudiando mientras yo me
   dirigía al gimnasio. Uno de ellos me miró y sentí como si estuviera...
 ---
-# Libertad
 
 Hoy pasaba por una escuela, los niños estaban estudiando mientras yo me dirigía al gimnasio. Uno de ellos me miró y sentí como si estuviera en una cárcel, en un lugar impuesto, probablemente por sus padres. Yo, en cambio, iba al gimnasio por decisión propia. Esa diferencia de libertad me hizo sentir bien, pero también me llevó a pensar: ¿se sentiría mejor el niño estando en mi lugar? Si tuviera toda la libertad a su disposición, ¿qué decisión tomaría? La posibilidad de hacer lo que quisiera podría colapsar su voluntad, dejándolo perdido, sin saber qué hacer. ¿A dónde iría? ¿Qué decisiones tomaría? ¿Cuándo empezaría a cuestionarse realmente lo que quiere?
 

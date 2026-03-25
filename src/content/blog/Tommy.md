@@ -5,7 +5,6 @@ description: >-
   Tommy se levantó hoy como un día normal, sin saber que en realidad era un día
   muy especial. Disfrutó de la mañana con una taza...
 ---
-# Tommy
 
 Tommy se levantó hoy como un día normal, sin saber que en realidad era un día muy especial. Disfrutó de la mañana con una taza de chocolate caliente que le sirvió Carla, su mamá. Quien con una sonrisa también le puso sobre la mesa un plato que tenía una arepa de mazorca y un pedacito de queso. Tommy este día se había levantado muy pronto por alguna razón, y cuando mamá le trajo la comida a la mesa, aunque se notaron sus intentos por ocultarlo, se dio cuenta que había estado llorando. Lo que lo hizo extrañarse porque hacía mucho tiempo no la veía llorar, desde la última vez en donde prometió no volverlo a hacer. 
 

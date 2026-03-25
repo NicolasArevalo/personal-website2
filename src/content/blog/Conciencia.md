@@ -3,7 +3,6 @@ title: Conciencia
 date: 2022-11-02T00:00:00.000Z
 description: "<aside> \U0001F5E3️ “Señores, estamos ante el avance tecnológico más grande de la historia. Darwin, Einstein, Musk, todos fueron un pilar fundamental del desarrollo, pero hay..."
 ---
-# Conciencia
 
 > 🗣️ “*Señores, estamos ante el avance tecnológico más grande de la historia. Darwin, Einstein, Musk, todos fueron un pilar fundamental del desarrollo, pero hay algo que nadie nunca pudo vencer…, hasta ahora. Hoy somos capaces de extraer la conciencia humana e implantarla de vuelta. Pronto seremos capaces de incorporar la conciencia y la memoria humana conjunta, este es el primer paso para vencer a LA MUERTE.”*
 

@@ -5,7 +5,6 @@ description: >-
   Tengo miedo de perderme en el jardin de tus letras. Este jardín que plantaste
   cuando decidiste que te ibas a ir. Aún sin leerlas a...
 ---
-# El jardín de tus letras
 
 Tengo miedo de perderme en el jardin de tus letras. 
 

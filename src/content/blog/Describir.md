@@ -5,7 +5,6 @@ description: >-
   La cafetería parecía vacía, las únicas personas allí eramos los tres de la
   fila, y la cajera, que también servía el café. La persona que...
 ---
-# Describir
 
 ## **Pedir un café.**
 
@@ -36,6 +35,8 @@ Recuerdo que probé ese café y me supo a gloria. ¿Qué había hecho yo para qu
 Recuerdo que después de darle el primer sorbo a esa taza caliente, balanceé ese líquido por toda mi boca para saborearlo, par disfrutar con cáda célula ese sabor. Lo hacía mientras miraba fíjamente a los ojos a esa mujer.
 
 Y recuerdo que mientras terminaba mi primer sorbo no me pude resistir a esa mujer que tenía delante y me le acerqué cual puma a su presa. No le quité ni un segundo la mirada de sus preciosos ojos miel. Puse mi mano sobre su pierna, me le acerqué al oído lentamente y le susurré “Quisiera decirte lo rico que me sabe ese tinto, pero creo que es mejor que te lo demuestre”.
+
+***
 
 Escribir siempre ha sido algo que me ha llamado la atención, porque es la manera más accesible que tengo para representar tantas ideas que vuelan por mi mente. 
 

@@ -6,7 +6,6 @@ description: >-
   Experiencias que deben ser transmitidas. Esta es una de ellas. Es solo que
   realmente...
 ---
-# Hamán secreto
 
 Hay secretos que necesitan ser contados. Lugares que merecen ser compartidos. Experiencias que deben ser transmitidas. Esta es una de ellas. Es solo que realmente no sé cómo compartirla… o, mejor dicho, sí sé, pero eso me pondría en una posición de vulnerabilidad en la que no había tenido el valor de estar. Pero aquí estoy.
 

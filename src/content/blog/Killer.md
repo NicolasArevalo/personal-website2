@@ -5,7 +5,6 @@ description: >-
   Me convertí en un asesino. Tuve que hacerlo porque no había otra manera de
   terminar con este dolor. Desde que te ví sabía que marcarías...
 ---
-# Killer
 
 Me convertí en un asesino.
 

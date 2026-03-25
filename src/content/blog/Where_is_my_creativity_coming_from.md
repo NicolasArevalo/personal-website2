@@ -5,7 +5,6 @@ description: >-
   I had a thought couple weeks ago that I wanted to write down. It was a moment
   of reflection, when you stop your mind machine,...
 ---
-# Where is my creativity coming from?
 
 I had a thought couple weeks ago that I wanted to write down. It was a moment of reflection, when you stop your mind machine, and just go and think why you think the way you think. 
 

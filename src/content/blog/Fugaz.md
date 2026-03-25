@@ -6,7 +6,6 @@ description: >-
   para escribir un poema diferente, Pero nunca saciarán un corazón. Cómo podré
   yo explicarle...
 ---
-# Fugaz
 
 Terrible momento de inspiración.
 

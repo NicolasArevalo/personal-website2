@@ -5,7 +5,6 @@ description: >-
   Quiero empezar con una pregunta. ¿la tecnología es propia de la juventud? Lo
   digo porque así lo pensamos, es normal que un abuelo nos pida...
 ---
-# La tecnología es y será
 
 Quiero empezar con una pregunta. ¿la tecnología es propia de la juventud?
 

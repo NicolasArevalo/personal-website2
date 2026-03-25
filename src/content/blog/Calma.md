@@ -5,7 +5,6 @@ description: >-
   Los charcos en la acera se iluminaban con las luces tenues de la calle. Era lo
   único que Sam quería ver mientras caminaba lentamente hasta...
 ---
-# Calma
 
 Los charcos en la acera se iluminaban con las luces tenues de la calle. Era lo único que Sam quería ver mientras caminaba lentamente hasta lo que hasta hacía unas semanas llamaba hogar. La noche larga y fría lo acompañaba hacia un destino al que ciertamente no quería ir. Cada paso se sentía como arrastrar una cadena con sus pies. 
 

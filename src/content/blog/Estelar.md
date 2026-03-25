@@ -5,7 +5,6 @@ description: >-
   — Te contaré una historia que siempre me pone sentimental… — Abuelo, me has
   contado muchas historias hoy, ¿nunca se acaban? — Una vida de...
 ---
-# Estelar
 
 — Te contaré una historia que siempre me pone sentimental…
 

@@ -5,7 +5,6 @@ description: >-
   Ayer escuché una chica hablar de que no quería tener hijos, y la primera razón
   por la que no quería era porque hacían muchas preguntas....
 ---
-# La magia de preguntar
 
 Ayer escuché una chica hablar de que no quería tener hijos, y la primera razón por la que **no** quería era porque hacían muchas preguntas. Me puso a pensar en cómo el mundo apaga nuestra *curiosidad*. Cómo uno nace realmente con una curiosidad innata y el mundo poco a poco nos la arrebata. 
 

@@ -5,9 +5,8 @@ description: >-
   Tu corazón se acelera, los dedos de tus manos y de tus pies se ponen fríos,
   respiras más rápido, tu piel se eriza. El miedo....
 ---
-# El miedo
 
-# Introducción
+## Introducción
 
 Tu corazón se acelera, los dedos de tus manos y de tus pies se ponen fríos, respiras más rápido, tu piel se eriza.
 
@@ -21,7 +20,7 @@ El miedo hay que tomarlo por los cuernos, hay que aprovechar ese sentimiento por
 
 Tomemos como ejemplo un salto en paracaídas. Muchas de las personas que lean esto dirán “Ay no Dios mío, jamás, *qué miedo*” Claro que sí. Debe darte miedo porque está poniendo en riesgo tu vida. Si tú decides que no quieres saltar porque no te gusta, es una cosa, otra es saber que sería chévere pero no *qué miedo.* El miedo tomó la decisión de que no saltaras, no tú.
 
-# Historia del miedo
+## Historia del miedo
 
 El miedo es algo presente en todas las especie animal, es lo que nos ha traído hasta aquí, porque quienes no tienen miedo, son devorados por el peligro. 
 
@@ -35,7 +34,7 @@ Hoy en día, sentimos algunos miedos, unos más que otros, pero ¿de dónde vien
 
  Pongámonos en situación. Estás en la mitad de una avenida… Mejor, ya que podemos imaginar lo que queramos: Imagina que estás en medio de la jungla, a lo lejos ves un puma, negro, uff, le brilla el pelaje, camina despacio como en una escena de película, hacen contacto visual…, se te eriza la piel. Algo no está bien. Ese puma también siente algo, huele, huele algo como rico, alguien, en este caso...
 
-## Clase de biología
+### Clase de biología
 
 Hablemos un poco de anatomía antes de seguir con nuestra escena.
 
@@ -49,29 +48,29 @@ Tienes la [amígala](https://www.neurologia.com/articulo/2001125#:~:text=La%20am
 
 Lo lograste, escapaste del puma! Felicitaciones, aunque quiero felicitar primordialmente a tu miedo, que fue lo que te sacó de allí.
 
-# Porqué el miedo es adictivo
+## Porqué el miedo es adictivo
 
 Seguro conoces a alguien que es adicto a la adrenalina, alguien que le gusta saltarse la ley porque le gusta hacer cosas que le “aceleren el corazón”. Ah, pues ya sabes entonces porqué se le acelera el corazón, ¿no?... ¿NO? Bueno, te lo digo otra vez: *el miedo.* Se entiende que esas personas no quieren que nada malo les pase, lo que quieren es la descarga de adrenalina que les genera el miedo.
 
 Eso estresa, el cerebro también libera otros neurotransmisores que generan otras sensaciones.
 
-## Hueles a miedo
+### Hueles a miedo
 
 Seguramente has escuchado algún villano que dice “Huelo tu miedo”, bueno, el villano no decía nada descabellado, sí es verdad. Cuando sentimos miedo segregamos feromonas que alertan a nuestra especie, por lo que si alguien siente miedo tú lo podrás sentir también sin siquiera verle u oírle. No es algo que de repente te haga sentir el miedo, pero sí puedes empezar a sentirlo de esa manera.
 
-## El miedo en la actualidad
+### El miedo en la actualidad
 
 Como lo hablábamos antes, ya no tenemos esos riesgos latentes en nuestra vida como de que nos coma un león, pero por supuesto seguimos sintiendo miedo, lo vivimos a diario, y a veces ni siquiera es por algo que ponga en riesgo nuestra vida. Tenemos 
 
-# Cómo controlar el miedo
+## Cómo controlar el miedo
 
 Una vez que entendemos qué es el miedo, y por qué lo estamos sintiendo, es mucho más sencillo tomar decisiones teniendolo en cuenta, pero sin dejarlo controlarnos. Respirar profundo y despacio siempre es una buena idea, ya que eso controla la circulación de la sangre y la hace fluir más lento. Te tranquiliza dar esos respiros profundos, ¿no?
 
-## Documental discovery chanel
+### Documental discovery chanel
 
 [https://www.youtube.com/watch?v=EJ4Ng37ws3M](https://www.youtube.com/watch?v=EJ4Ng37ws3M)
 
-## La amígdala, donde se activa el miedo, si se extirpa en los animales parece que pierden el miedo, por el contrario, en los humanos no pasa lo mismo, a penas y se sienten más calmados.
+### La amígdala, donde se activa el miedo, si se extirpa en los animales parece que pierden el miedo, por el contrario, en los humanos no pasa lo mismo, a penas y se sienten más calmados.
 
 Es la emoción humana más poderosa
 

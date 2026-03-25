@@ -5,7 +5,6 @@ description: >-
   En la antigüedad (y seguro que lo has visto en películas), las comunidades se
   reunían al rededor de una fogata y celebraban con cantos, música...
 ---
-# La música
 
 En la antigüedad (y seguro que lo has visto en películas), las comunidades se reunían al rededor de una fogata y celebraban con cantos, música y danzas cosas como la buena caza, un matrimonio y estas cosas importantes. Y lo que los unía era la música. Cuando comenzaba a sonar el llamador (así se llama el tambor que invita a las personas a reunirse porque ya va a comenzar el evento, así como las campanas de una iglesia o las trompetas del ejercito de m[uy muy lejano cuando van a anunciarle a Shrek que ha sido invitado al baile](https://youtu.be/RZMtphLVvZk?t=123)) la gente sabía que era hora de reunirse y disfrutar, y era gracias a la música. 
 

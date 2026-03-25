@@ -5,9 +5,8 @@ description: >-
   1. Find the sense of the song what the singer wants to say? This is usually
   easy, but tbh my kind of music and in...
 ---
-# Chlorine
 
-# Analysis
+## Analysis
 
 1. Find the sense of the song *what the singer wants to say?*
     
@@ -160,7 +159,7 @@ description: >-
 
 </aside>
 
-# My lyrics
+## My lyrics
 
 Lo siento es mi destino
 
@@ -204,7 +203,7 @@ solo quiero descansar mi psique un tan un suficiente,
 
 que me permita… 
 
-## Draft
+### Draft
 
 Mi rostro contra el viento,
 
