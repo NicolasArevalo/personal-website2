@@ -41,63 +41,32 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <h2>Proyectos Destacados</h2>
-      <ul class="projects-list portfolio">
-        <li>
-          <strong>Notes App 🗒️</strong>
-          <span class="tech-stack">React • Python • TailwindCSS • PostgreSQL</span>
-          <p>Aplicación fullstack manejando RESTful API con Django y base de datos relacional.</p>
-          <div class="links">
-            <a href="https://notesapp-three-nu.vercel.app" target="_blank">Visitar app</a> • 
-            <a href="https://github.com/nicolasarevalo/notesapp-frontend" target="_blank">GitHub Front</a> • 
-            <a href="https://github.com/nicolasarevalo/notesapp-back" target="_blank">GitHub Back</a>
+      <div class="projects-grid">
+        <a href="https://lacasadeloscolibris.com" target="_blank" rel="noopener noreferrer" class="project-card">
+          <span class="tech-tag">Astro</span>
+          <h3>La Casa de los Colibrís 🐦</h3>
+          <p>Refugio de eventos, descanso y espiritualidad en Alocén, España. Diseño web con identidad de marca, galería multimedia y presencia digital completa.</p>
+          <div class="project-links">
+            <span>Visitar sitio →</span>
           </div>
-        </li>
-        <li>
-          <strong>WebChat 💭</strong>
-          <span class="tech-stack">Socket.io • JavaScript</span>
+        </a>
+        <a href="https://spiny-few-tsunami.glitch.me" target="_blank" rel="noopener noreferrer" class="project-card">
+          <span class="tech-tag">Socket.io • JavaScript</span>
+          <h3>WebChat 💭</h3>
           <p>Aplicación de chat en tiempo real desplegada con éxito, mejorando los conceptos iniciales del curso.</p>
-          <div class="links">
-            <a href="https://spiny-few-tsunami.glitch.me" target="_blank">Visitar app</a> • 
-            <a href="https://github.com/nicolasarevalo/webchat" target="_blank">GitHub</a>
+          <div class="project-links">
+            <span>GitHub →</span>
           </div>
-        </li>
-        <li>
-          <strong>To-do App 📝</strong>
-          <span class="tech-stack">React • Supabase • Pico CSS</span>
-          <p>Implementación de Backend-as-a-Service (BaaS) usando Supabase para persistencia de datos.</p>
-          <div class="links">
-            <a href="https://todoapp-ashen.vercel.app" target="_blank">Visitar app</a> • 
-            <a href="https://github.com/nicolasarevalo/todoapp" target="_blank">GitHub</a>
-          </div>
-        </li>
-        <li>
-          <strong>Explouñas 💅🏼</strong>
-          <span class="tech-stack">HTML • CSS • JavaScript</span>
+        </a>
+        <a href="https://explounas2-nicolasarevalos-projects.vercel.app" target="_blank" rel="noopener noreferrer" class="project-card">
+          <span class="tech-tag">HTML • CSS • JavaScript</span>
+          <h3>Explouñas 💅🏼</h3>
           <p>Sitio web informativo hecho a medida para un emprendimiento. Diseño visualmente atractivo.</p>
-          <div class="links">
-            <a href="https://explounas2.vercel.app/" target="_blank">Visitar app</a> • 
-            <a href="https://github.com/nicolasarevalo/explounas" target="_blank">GitHub</a>
+          <div class="project-links">
+            <span>GitHub →</span>
           </div>
-        </li>
-        <li>
-          <strong>Perritos 🐶</strong>
-          <span class="tech-stack">React • CSS</span>
-          <p>Aplicación que interactúa con APIs (GET, POST, PUT, PATCH, DELETE) migrada a React.</p>
-          <div class="links">
-            <a href="https://perritosapp.vercel.app" target="_blank">Visitar app</a> • 
-            <a href="https://github.com/nicolasarevalo/perritosapp" target="_blank">GitHub</a>
-          </div>
-        </li>
-        <li>
-          <strong>Giphy App 😜</strong>
-          <span class="tech-stack">React • CSS</span>
-          <p>Buscador de GIFs con estilos diseñados en CSS puro.</p>
-          <div class="links">
-            <a href="https://nicolasarevalo.github.io/giphy-app/" target="_blank">Visitar app</a> • 
-            <a href="https://github.com/nicolasarevalo/giphy-app" target="_blank">GitHub</a>
-          </div>
-        </li>
-      </ul>
+        </a>
+      </div>
     </div>
     
     <!-- Under Construction / Contact Alert -->
@@ -215,67 +184,82 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     text-shadow: 0 0 10px rgba(147, 51, 234, 0.4);
   }
 
-  .projects-list {
-    list-style-type: none;
-    padding: 0;
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
-  .projects-list li {
-    margin-bottom: 2rem;
-    font-size: 1.15rem;
-    line-height: 1.6;
-    color: var(--text-secondary);
+  .project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    isolation: isolate;
+    background-color: #050505;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: border-color 0.2s ease;
   }
 
-  .projects-list strong {
-    color: var(--text-primary);
-    display: block;
-    margin-bottom: 0.5rem; /* Increased spacing */
-    font-family: var(--font-heading);
-    font-size: 1.6rem; /* Make it read more like a subtitle */
-    font-weight: 500;
-    letter-spacing: 0.02em; /* Ensure font renders cleanly */
+  .project-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(147, 51, 234, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    pointer-events: none;
   }
 
-  .portfolio li {
-    padding-bottom: 2.5rem; /* Give breathing room between projects */
-    border-bottom: 1px solid var(--border-color);
-    margin-bottom: 2.5rem;
+  .project-card:hover {
+    border-color: rgba(147, 51, 234, 0.3);
   }
 
-  .portfolio li:last-child {
-    border-bottom: none;
+  .project-card:hover::after {
+    opacity: 1;
   }
 
-  .tech-stack {
-    display: block;
-    font-size: 0.9rem;
-    color: #c084fc; /* Brighter, more vibrant purple for readability */
-    margin-bottom: 1rem; /* More spacing */
+  .tech-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: #c084fc;
     font-family: var(--font-body);
     font-weight: 500;
     letter-spacing: 0.05em;
-  }
-  
-  .links {
-    margin-top: 1.25rem;
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-    color: var(--text-tertiary);
+    margin-bottom: 0.75rem;
   }
 
-  .links a, .external-link {
-    color: var(--text-secondary);
-    text-decoration: none;
+  .project-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+    font-weight: 500;
     transition: color 0.2s ease, text-shadow 0.2s ease;
   }
 
-  .links a:hover, .external-link:hover {
+  .project-card:hover h3 {
     color: var(--accent-color);
     text-shadow: 0 0 10px rgba(147, 51, 234, 0.4);
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .project-links {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
   }
 
   /* Alert Toast Styles */
