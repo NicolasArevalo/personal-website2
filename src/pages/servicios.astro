@@ -1,0 +1,774 @@
+---
+export const prerender = true;
+import BaseLayout from '../layouts/BaseLayout.astro';
+import podcastImg from '../assets/5.png';
+---
+
+<BaseLayout title="Servicios" description="Mis servicios y portafolio profesional.">
+  <div class="container page-content">
+    <header class="page-header">
+      <h1>Servicios</h1>
+      <p class="subtitle">Estos son algunos de los servicios que ofrezco. Pero, como buen colombiano, lo que no sé, lo aprendo. </p>
+    </header>
+
+    <div class="services-grid">
+      <div class="cards-wrapper">
+        <div class="service-card" data-service="software">
+          <button class="service-header" aria-expanded="false">
+            <span class="service-tag">Astro • React • Node • TypeScript</span>
+            <h3>Software Engineering</h3>
+            <span class="expand-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="service-content">
+            <div class="service-inner">
+              <p class="service-description">Diseño y desarrollo de productos web a medida, desde la arquitectura hasta el despliegue. Código limpio, escalable y pensado para crecer.</p>
+              <div class="sub-projects">
+                <a href="https://lacasadeloscolibris.com" target="_blank" rel="noopener noreferrer" class="sub-project-card">
+                  <span class="tech-tag">Astro</span>
+                  <h4>La Casa de los Colibrís 🐦</h4>
+                  <p>Diseño de marca y sitio web completo para un refugio de descanso y espiritualidad en Alocén, España.</p>
+                  <span class="project-link">Visitar sitio →</span>
+                </a>
+                <a href="https://promotoravivendum.com" target="_blank" rel="noopener noreferrer" class="sub-project-card">
+                  <span class="tech-tag">Astro • WordPress</span>
+                  <h4>Vivendum 🏡</h4>
+                  <p>Evolución continua del sitio web de una inmobiliaria: actualizaciones de contenido, mejoras técnicas y mantenimiento activo.</p>
+                  <span class="project-link">Visitar sitio →</span>
+                </a>
+                <a href="https://explounas2-nicolasarevalos-projects.vercel.app" target="_blank" rel="noopener noreferrer" class="sub-project-card">
+                  <span class="tech-tag">HTML • CSS • JavaScript</span>
+                  <h4>Explouñas 💅🏼</h4>
+                  <p>Sitio web a medida para un emprendimiento de manicura, con diseño visual cuidado pensado para atraer y convertir clientas.</p>
+                  <span class="project-link">GitHub →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://galeria.niiico.com" target="_blank" rel="noopener noreferrer" class="service-card service-link">
+          <div class="service-header">
+            <span class="service-tag">Fotografía</span>
+            <h3>Galería fotográfica</h3>
+            <span class="redirect-icon">↗</span>
+          </div>
+        </a>
+
+        <a href="/" class="service-card service-link">
+          <div class="service-header">
+            <span class="service-tag">Blog • Narrativa</span>
+            <h3>Escritura creativa</h3>
+            <span class="redirect-icon">↗</span>
+          </div>
+        </a>
+
+        <div class="service-card" data-service="locucion">
+          <button class="service-header" aria-expanded="false">
+            <span class="service-tag">Podcast • Voz comercial • Doblaje</span>
+            <h3>Locución</h3>
+            <span class="expand-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="service-content">
+            <div class="service-inner">
+              <div class="service-text-col">
+                <p>Tu marca necesita una voz, esta es la mía. Me enfoco en voz comercial, doblaje empresarial y producción de podcast. Tono profesional, cercano y memorable.</p>
+                <div class="service-links">
+                  <a href="https://open.spotify.com/show/1gFBa3gI7d9FTKTB6KRY6e?si=mHYJHseYSWmZofb08cdynA" target="_blank" rel="noopener noreferrer" class="service-action-link">5MENTARIOS podcast →</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="service-action-link">Voice123 →</a>
+                </div>
+              </div>
+              <a href="https://open.spotify.com/show/1gFBa3gI7d9FTKTB6KRY6e?si=mHYJHseYSWmZofb08cdynA" target="_blank" rel="noopener noreferrer" class="podcast-link">
+                <img src={podcastImg.src} alt="5MENTARIOS podcast" class="podcast-image" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <a href="mailto:contacto@niiico.com" class="contact-button">Contáctame</a>
+      </div>
+    </div>
+
+    <div class="titulaciones-section">
+      <h2>Titulaciones y Educación</h2>
+
+      <div class="badges-container">
+        <a href="https://niiico.com/_astro/inge.64d8bbb7.pdf" target="_blank" rel="noopener noreferrer" class="badge">
+          <span class="badge-title">Ingeniero de Software</span>
+          <span class="badge-meta">Universitario ↗</span>
+        </a>
+        <a href="https://niiico.com/_astro/sistemas.36abc9c0.pdf" target="_blank" rel="noopener noreferrer" class="badge">
+          <span class="badge-title">Técnico en Sistemas</span>
+          <span class="badge-meta">SENA ↗</span>
+        </a>
+        <a href="https://niiico.com/_astro/scrum.b75839b4.pdf" target="_blank" rel="noopener noreferrer" class="badge">
+          <span class="badge-title">SCRUM Fundamentals</span>
+          <span class="badge-meta">Certificado ↗</span>
+        </a>
+        <a href="https://niiico.com/_astro/udw.4ab5ce98.pdf" target="_blank" rel="noopener noreferrer" class="badge">
+          <span class="badge-title">Desarrollo Web</span>
+          <span class="badge-meta">Udemy ↗</span>
+        </a>
+        <a href="https://niiico.com/_astro/pjs.ddccc43e.pdf" target="_blank" rel="noopener noreferrer" class="badge">
+          <span class="badge-title">Profesional Javascript</span>
+          <span class="badge-meta">Platzi ↗</span>
+        </a>
+        <a href="https://niiico.com/_astro/id.2f6d16cd.pdf" target="_blank" rel="noopener noreferrer" class="badge">
+          <span class="badge-title">Inglés para Developers</span>
+          <span class="badge-meta">Platzi ↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div id="prof-alert" class="newsletter-alert">
+      <span class="alert-icon">😉</span>
+      <p>Pídemela por correo</p>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.querySelector('.cards-wrapper');
+    const grid = document.querySelector('.services-grid');
+    const cards = wrapper.querySelectorAll('.service-card:not(.service-link)');
+    let expandedCard = null;
+
+    cards.forEach(card => {
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('a')) return;
+
+        if (expandedCard === card) {
+          collapseCard(card);
+        } else {
+          if (expandedCard) resetCard(expandedCard);
+          expandCard(card);
+        }
+      });
+    });
+
+    function resetCard(card) {
+      card.style.position = '';
+      card.style.top = '';
+      card.style.left = '';
+      card.style.right = '';
+      card.style.bottom = '';
+      card.style.zIndex = '';
+      card.style.display = '';
+      card.style.flexDirection = '';
+      card.style.transform = '';
+      card.style.transformOrigin = '';
+      card.style.opacity = '';
+      card.style.transition = '';
+      card.classList.remove('expanded');
+      card.querySelector('.service-header').setAttribute('aria-expanded', 'false');
+      const otherCards = wrapper.querySelectorAll('.service-card.dimmed');
+      otherCards.forEach(c => c.classList.remove('dimmed'));
+      grid.classList.remove('has-expanded');
+      expandedCard = null;
+    }
+
+    function expandCard(card) {
+      expandedCard = card;
+      grid.classList.add('has-expanded');
+
+      const first = card.getBoundingClientRect();
+      const gridRect = wrapper.getBoundingClientRect();
+
+      card.dataset.origLeft = first.left - gridRect.left;
+      card.dataset.origTop = first.top - gridRect.top;
+      card.dataset.origWidth = first.width;
+      card.dataset.origHeight = first.height;
+
+      card.style.position = 'absolute';
+      card.style.top = '0';
+      card.style.left = '0';
+      card.style.right = '0';
+      card.style.bottom = '0';
+      card.style.zIndex = '10';
+      card.style.display = 'flex';
+      card.style.flexDirection = 'column';
+
+      const last = card.getBoundingClientRect();
+      const dx = first.left - last.left;
+      const dy = first.top - last.top;
+      const sx = first.width / last.width;
+      const sy = first.height / last.height;
+
+      card.style.transformOrigin = '0 0';
+      card.style.transform = `translate(${dx}px, ${dy}px) scale(${sx}, ${sy})`;
+      card.style.opacity = '0';
+      card.querySelector('.service-header').setAttribute('aria-expanded', 'true');
+
+      const otherCards = wrapper.querySelectorAll('.service-card:not(.expanding)');
+      otherCards.forEach(c => { if (c !== card) c.classList.add('dimmed'); });
+
+      requestAnimationFrame(() => {
+        card.style.transition = 'transform 0.35s ease, opacity 0.25s ease';
+        card.style.transform = 'translate(0, 0) scale(1, 1)';
+        card.style.opacity = '1';
+        card.classList.add('expanded');
+      });
+
+      card.addEventListener('transitionend', function onEnd() {
+        card.style.transition = '';
+        card.removeEventListener('transitionend', onEnd);
+      });
+    }
+
+    function collapseCard(card) {
+      card.querySelector('.service-header').setAttribute('aria-expanded', 'false');
+      card.style.transition = 'opacity 0.2s ease';
+      card.style.opacity = '0';
+
+      const onEnd = () => {
+        card.style.position = '';
+        card.style.top = '';
+        card.style.left = '';
+        card.style.right = '';
+        card.style.bottom = '';
+        card.style.zIndex = '';
+        card.style.display = '';
+        card.style.flexDirection = '';
+        card.style.transform = '';
+        card.style.transformOrigin = '';
+        card.style.opacity = '';
+        card.style.transition = '';
+        card.classList.remove('expanded');
+
+        const otherCards = wrapper.querySelectorAll('.service-card.dimmed');
+        otherCards.forEach(c => c.classList.remove('dimmed'));
+
+        grid.classList.remove('has-expanded');
+        expandedCard = null;
+        card.removeEventListener('transitionend', onEnd);
+      };
+
+      card.addEventListener('transitionend', onEnd);
+    }
+
+    const badges = document.querySelectorAll('.badge');
+    const alert = document.getElementById('prof-alert');
+
+    if (alert && badges.length > 0) {
+      badges.forEach(badge => {
+        badge.addEventListener('click', (e) => {
+          e.preventDefault();
+          alert.style.display = 'flex';
+          alert.offsetHeight;
+          alert.classList.add('show-alert');
+          setTimeout(() => {
+            alert.classList.remove('show-alert');
+            setTimeout(() => {
+              if(!alert.classList.contains('show-alert')) {
+                alert.style.display = 'none';
+              }
+            }, 400);
+          }, 3000);
+        });
+      });
+    }
+  });
+</script>
+
+<style>
+  .page-header {
+    margin-bottom: 2rem;
+  }
+
+  .page-header h1 {
+    font-size: 3.5rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-family: var(--font-heading);
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+  }
+
+  .contact-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.25rem 1.5rem;
+    background-color: #050505;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-tertiary);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    font-family: var(--font-body);
+    z-index: 0;
+  }
+
+  .contact-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--accent-color), #da70d6);
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+
+  .contact-button:hover {
+    border-color: transparent;
+    color: #fff;
+  }
+
+  .contact-button:hover::before {
+    opacity: 1;
+  }
+
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  .cards-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    height: 420px;
+  }
+
+  .service-card[data-service="software"],
+  .service-card[data-service="locucion"] {
+    grid-column: span 2;
+  }
+
+  .service-card {
+    position: relative;
+    background-color: #050505;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-card.service-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .service-card.service-link:hover .service-header h3 {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(147, 51, 234, 0.4);
+  }
+
+  .redirect-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: var(--text-tertiary);
+    font-size: 1.2rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+
+  .service-card.service-link:hover .redirect-icon {
+    color: var(--accent-color);
+    transform: translate(2px, -2px);
+  }
+
+  .service-content::-webkit-scrollbar,
+  .service-inner::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .service-content::-webkit-scrollbar-track,
+  .service-inner::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .service-content::-webkit-scrollbar-thumb,
+  .service-inner::-webkit-scrollbar-thumb {
+    background: rgba(147, 51, 234, 0.25);
+    border-radius: 4px;
+  }
+
+  .service-content::-webkit-scrollbar-thumb:hover,
+  .service-inner::-webkit-scrollbar-thumb:hover {
+    background: rgba(147, 51, 234, 0.4);
+  }
+
+  .service-content,
+  .service-inner {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(147, 51, 234, 0.25) transparent;
+  }
+
+  .service-card.dimmed {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .service-card:hover {
+    border-color: rgba(147, 51, 234, 0.3);
+  }
+
+  .service-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    font-family: inherit;
+    position: relative;
+  }
+
+  .service-tag {
+    font-size: 0.75rem;
+    color: #c084fc;
+    font-family: var(--font-body);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+
+  .service-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 500;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+    padding-right: 2rem;
+  }
+
+  .service-card:hover .service-header h3 {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(147, 51, 234, 0.4);
+  }
+
+  .expand-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: var(--text-tertiary);
+    transition: transform 0.3s ease, color 0.2s ease;
+  }
+
+  .service-card.expanded .expand-icon {
+    transform: rotate(45deg);
+    color: var(--accent-color);
+  }
+
+  .service-content {
+    flex: 1;
+    overflow: hidden;
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  .service-card.expanded .service-content {
+    overflow-y: auto;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .service-inner p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0 0 1rem;
+  }
+
+  .service-inner p:last-of-type {
+    margin-bottom: 1.25rem;
+  }
+
+  .sub-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .sub-project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.25rem;
+    background-color: #080808;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: border-color 0.2s ease;
+  }
+
+  .sub-project-card:hover {
+    border-color: rgba(147, 51, 234, 0.3);
+  }
+
+  .sub-project-card .tech-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    color: #c084fc;
+    font-family: var(--font-body);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+
+  .sub-project-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    margin: 0 0 0.35rem;
+    line-height: 1.2;
+    font-weight: 500;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+  }
+
+  .sub-project-card:hover h4 {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(147, 51, 234, 0.4);
+  }
+
+  .sub-project-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin: 0 0 0.75rem;
+    line-height: 1.5;
+  }
+
+  .project-link {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    transition: color 0.2s ease;
+  }
+
+  .sub-project-card:hover .project-link {
+    color: var(--accent-color);
+  }
+
+  .service-card.expanded .service-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+  }
+
+  .service-card[data-service="locucion"].expanded .service-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .service-card[data-service="locucion"].expanded .service-text-col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+  }
+
+  .service-card[data-service="locucion"].expanded .service-links {
+    margin-top: auto;
+  }
+
+  .service-card[data-service="locucion"].expanded .podcast-link {
+    margin: 0;
+    align-self: start;
+  }
+
+  .service-card[data-service="locucion"].expanded .podcast-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    object-position: top center;
+  }
+
+  .service-links {
+    margin-top: auto;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+  }
+
+  .podcast-link {
+    display: block;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: box-shadow 0.25s ease;
+    margin: 0.5rem 0;
+  }
+
+  .podcast-link:hover {
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.35);
+  }
+
+  .podcast-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .service-action-link {
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    background: linear-gradient(to right, var(--accent-color), #da70d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: filter 0.2s ease;
+  }
+
+  .service-action-link:hover {
+    filter: brightness(1.2) drop-shadow(0 0 8px rgba(147, 51, 234, 0.4));
+  }
+
+  .titulaciones-section h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-family: var(--font-heading);
+  }
+
+  .badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.6rem 1.1rem;
+    background-color: #080808;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .badge:hover {
+    border-color: rgba(147, 51, 234, 0.4);
+    background-color: #0c0c0c;
+  }
+
+  .badge-title {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+  }
+
+  .badge-meta {
+    color: var(--text-tertiary);
+    font-size: 0.75rem;
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .badge:hover .badge-title {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(147, 51, 234, 0.4);
+  }
+
+  .newsletter-alert {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background-color: #000;
+    border: 1px solid rgba(147, 51, 234, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(147, 51, 234, 0.2);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    display: none;
+    align-items: center;
+    gap: 0.75rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 9999;
+  }
+
+  .newsletter-alert.show-alert {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .alert-icon {
+    font-size: 1.25rem;
+  }
+
+  .newsletter-alert p {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  @media (max-width: 600px) {
+    .services-grid {
+      gap: 1rem;
+    }
+
+    .cards-wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      height: auto;
+    }
+
+    .service-card[data-service="software"],
+    .service-card[data-service="locucion"] {
+      grid-column: span 1;
+    }
+
+    .newsletter-alert {
+      width: 90%;
+      bottom: 1rem;
+    }
+  }
+</style>
