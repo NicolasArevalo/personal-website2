@@ -6,20 +6,36 @@ description: >-
 ---
 
 Sientes cómo una vibración recorre todo tu cuerpo. El peso de tu propia frente contra el suelo es el último recordatorio de que alguna vez fuiste dueño de tus músculos; ahora la vibración ya no te recorre, te penetra hasta tu centro y, al llegar allí, te expulsa de tu propia carne.
+
 Viajas automáticamente hasta dentro de tu cerebro. Eres un ser encarcelado en un cuerpo, alguien que necesita prescindir de su ente corpóreo que no es más que un grillete que lo ata a una dimensión terrestre. Aún respiras, pero notas que eso no está en tu control. Que este ente está ordenando esos movimientos frente a ti; que tu corazón late y bombea esa sangre sin tú tener ningún tipo de decisión en ello.
+
 Ves cada órgano trabajando de manera autónoma y notas que el director de esa orquesta eres tú. De repente tienes el poder de detener a voluntad tu corazón, tus intestinos, tus pulmones. Pero en el mismo instante que descubres ese poder, ves lo devastador que sería detener cualquiera de esas funciones. No te atreves a cambiar el flujo perfecto en el que están.
+
 Regresas. La sensación de tu frente tocando el suelo es incómoda. Giras sobre ti mismo para ver el cielo, pero eres más ligero que una pluma. Haces el movimiento sin esfuerzo. Te levantas. Es sencillo, como si flotaras, como si no hubiera gravedad.
+
 Al mirar al suelo, ves que tu cuerpo aún está en el piso. Estás en la misma posición en la que empezaste, y notas que, aún de pie, sientes el suelo presionando tu frente. Sigues en control de tu cuerpo. Aún podrías detener tu corazón si quisieras, pero ya no estás atado a ese personaje orgánico que limitaba tus actos.
+
 Sientes un calor que te acaricia la cabeza frente a la fogata. Notas, en cambio, tus pies congelados; tus dedos se encogen para guardar el poco calor que les llega. Tu corazón late al ritmo del tambor.
+
 Han pasado tal vez dos años. O diez.
+
 Sientes cómo crecen tus uñas y se entierran en el piso. Tu piel se vuelve cuero viejo bajo el sol de siglos que no han transcurrido. Buscas tus recuerdos: entraste en este recinto hace tal vez un mes. Las aproximaciones parecen acertadas aunque no coincidan con tu línea temporal. El tiempo corre de manera distinta. Si es que a eso le puedes llamar tiempo.
+
 El color rojo invade tu visión. Tu corazón dobla el ritmo del tambor. Bombea como un martillo hidráulico que retumba en una catedral de hueso. Sientes cómo un ser se para detrás de ti. No es una persona; es una ausencia de calor que te succiona. La temperatura cae por completo. Tus huesos se sienten como un cristal a punto de estallar. Un frío que quema.
+
 ¿Quién es este ser que se atreve a alterar tu paz?
+
 Quieres girar, pero no puedes. No sabes cómo mirar hacia atrás. El espacio se ha doblado sobre sí mismo y ver hacia atrás es como asomarte al interior de tu propia nuca. Ya no hay arriba ni abajo.
+
 Empiezas a saborear el ritmo. El golpe seco de las tamboras ya no entra por tus oídos, se desliza por tu garganta como aceite hirviendo. Ahora ves el color rojo con tu piel. Es un tono jamás sentido.
+
 La sombra estira su mano. La introduce en tu mente. Revuelve tus pensamientos con sus dedos y encuentra, en lo profundo, una puerta que al abrirse te arrastra y no tienes más opción que dejarte llevar. Ahora, de pie, o tal vez flotando (ya no distingues diferencia), te encuentras frente a una mesa de mármol. Cuatro siluetas humanas ocupan cada esquina de aquella mesa. Realmente no podrías definir si eran hombres o mujeres. Eran entes. Seres presentes actuando sobre aquel desafortunado cuerpo. Las velas inundaban el lugar. Incontables llamas que iluminaban el habitáculo en el que se encontraban. El olor a esperma quemada era profundo, y se mezclaba con las pociones e infusiones con las que trataban aquel desafortunado cuerpo. El frío del exterior impregnaba las paredes, se escurría entre los umbrales y se convertía en una brisa unidireccional que rodeaba la habitación y enfriaba la espalda de los presentes y los no presentes. No era un lugar agradable. Sin embargo, allí se encontraban, realizando este ritual sobre aquel desafortunado cuerpo.
+
 Una herramienta forjada en hierro penetraba capas de piel desde la parte inferior del esternón hacia su pelvis dejando al descubierto sus órganos intestinales, los cuales brotaban junto a un mar de sangre que cubrió la superficie de la mesa. Toda esa entraña se trituró. Se recogió la mayor cantidad de sangre que se pudo drenándola a través de su arteria carótida. Con ella, pintaron símbolos en el piso. Líneas serpenteantes que no tenían sentido desde abajo, pero que desde la cúpula de aquel recinto daban forma a un círculo con dos triángulos contrarios, que en su mitad describían un ojo devorador. Un ojo sin párpado en el que se puso toda la tripa, y al ser completado el ojo iluminó la habitación mucho más que las velas; expulsó un hedor indescriptible que llenó la habitación en dos segundos y del cuál emergió una figura inmensa, semihumana, con piel de fuego, con sus cavidades oculares aparentemente vacías y, en su frente, dos extensiones óseas en forma de ese. Y a pesar de todo ese fuego, el frío te retumbaba en los huesos cada vez más.
+
 La bestia emergida gira su rostro hacia ti. Sus ojos ausentes descargan el peso del terror sobre ti. El infierno se hace presente. La fogata está por todas partes. Gritos. Lamentos. El chamán canta, pero su voz es un hilo delgado en medio de una erupción volcánica. Sientes el pánico en la yurta. Personas corren a socorrerte. Tu respiración acelerada busca saciar la orden de tu corazón de oxigenar tus músculos. Decides desviar el flujo sanguíneo hasta tus pulmones. Tus extremidades se congelan. El control se pierde. Ya no eres nadie para mandar sobre ti mismo. Te mueves por el suelo con violencia. El polvo cubre tu piel. De tu boca sale un líquido tibio; un chorro de hierro y bilis que empapa la tierra. Notas que viene otra vez. Sientes la corriente recorrer tu abdomen, obligando a tus músculos a contraerse; obligando al líquido a brotar de ti.
+
 Es el tributo. El pago por haberle mirado el rostro.
 La soberanía que creíste tener sobre tu anatomía fue solo un préstamo; una broma cruel del que aún te remueve con sus dedos. Te das cuenta, mientras el polvo se pega a tu boca húmeda, que nunca fuiste el director de la orquesta ni un espectador. Fuiste un instrumento. Fuiste un desafortunado cuerpo.
+
 Ahora, alguien más ha decidido empezar a tocar.
